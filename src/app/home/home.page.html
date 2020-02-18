@@ -1,20 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>
+			TP:
+		</ion-title>
+	</ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content [fullscreen]="true" class="back">
+	<ion-header collapse="condense">
+		<ion-toolbar>
+			<ion-title size="large">TP:</ion-title>
+		</ion-toolbar>
+	</ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+	<div id="container">
+		<form (ngSubmit)="connexion()">
+			<ion-item class="item">
+				<ion-label></ion-label>
+				<ion-input type="text" placeholder="nom de l'utilisateur" name="login" [(ngModel)]="model.login" ></ion-input>
+			</ion-item>
+			<ion-item class="item">
+				<ion-label></ion-label>
+				<ion-input type="password" placeholder="mot de passe" name="passwd" [(ngModel)]="model.passwd" ></ion-input>
+			</ion-item>
+			<ion-button type="submit" block>se connecter</ion-button>
+		</form>
   </div>
 </ion-content>

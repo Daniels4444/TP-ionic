@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button routerLink="/home"><</ion-button><ion-title>Utilisateurs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<ion-item *ngFor="let user of tabUsers">
+		<ion-label>
+			<img src="{{user.picture.medium}}" />{{ user.name.title }} {{ user.name.first }} <br /> {{ user.name.last }}
+		</ion-label>
+	</ion-item>
+</ion-content>
