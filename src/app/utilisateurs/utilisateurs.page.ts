@@ -18,4 +18,8 @@ export class UtilisateursPage implements OnInit {
 		console.log(this.tabUsers);
 	}
 	
+	infos()
+	{
+		console.log("vous voulez voir les infos de ");
+	}
 }

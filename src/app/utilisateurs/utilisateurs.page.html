@@ -4,10 +4,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content overflow-scroll="true">
 	<ion-item *ngFor="let user of tabUsers">
-		<ion-label>
-			<img src="{{user.picture.medium}}" />{{ user.name.title }} {{ user.name.first }} <br /> {{ user.name.last }}
-		</ion-label>
+			<img src="{{user.picture.medium}}" />{{ user.name.title }} {{ user.name.first }} {{ user.name.last }}
 	</ion-item>
 </ion-content>

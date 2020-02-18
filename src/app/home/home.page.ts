@@ -18,14 +18,16 @@ export class HomePage {
 	
 	connexion()
 	{
-		if(this.model.login != this.login || this.model.passwd != this.passwd)
+		
+		/*if(this.model.login != this.login || this.model.passwd != this.passwd)
 		{
 			console.log("Login ou mot de passe non valide");
 		}
 		else
 		{
 			console.log("connexion...");
-			this.routeur.navigate(['utilisateurs']);
-		}
+			
+		}*/
+		this.routeur.navigate(['utilisateurs']);
 	}
 }
